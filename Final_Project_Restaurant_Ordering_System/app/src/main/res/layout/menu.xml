@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#444444">
+
+    <Gallery android:id="@+id/Gallery01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="5dp"
+        android:padding="2dp"
+        android:spacing="5dp" />
+
+    <ImageView android:id="@+id/imgShow"
+        android:layout_below="@+id/Gallery01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/titleOfMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgShow"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="22dp"
+        android:text="香菇雞湯"/>
+
+    <TextView
+        android:id="@+id/textOfMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleOfMenu"
+        android:gravity="left"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:text="採用嚴選的新鮮上等雞肉，讓您體驗到前所未嚐的肉質口感，伴隨香菇的添加為這道菜增加了許多的鮮美度，雞湯的濃郁與滑順的口感將帶領您的味蕾到達另一個新的美食天地。"/>
+</RelativeLayout>

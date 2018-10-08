@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#444444"
+    tools:context="com.username.java_final_restaurant.RestaurantMainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="194dp"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/titleOfIntro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="優質環境"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/textOfIntro"
+            android:layout_below="@+id/titleOfIntro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textColor="#FFFFFF"
+            android:textSize="22dp"
+            android:text="這是美食與視覺的雙重享宴，餐廳內部的任何地區都經過精心的裝潢與設計，讓您彷彿置身在藝術的天地，並且從餐廳外部放眼望去就是一片蔚藍的海洋，讓你可以邊享用餐點邊觀賞大自然的美" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitStart"
+        android:src="@drawable/place"
+        android:layout_marginBottom="179dp"
+        android:layout_above="@+id/nextButton" />
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/slideMenuLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <!-- 主程式畫面 -->
+        <LinearLayout
+            android:id="@+id/mainContent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <Button
+                android:id="@+id/previousButton"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="400dp"
+                android:layout_marginLeft="70dp"
+                android:text="上一頁" />
+
+            <Button
+                android:id="@+id/nextButton"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="400dp"
+                android:layout_marginLeft="40dp"
+                android:text="下一頁" />
+        </LinearLayout>
+        <!-- Sidebar 側邊欄 -->
+        <ListView
+            android:id="@+id/slideMenuList"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="left"
+            android:background="#FFFFFFFF" />
+    </android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>
