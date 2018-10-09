@@ -14,9 +14,14 @@
         the maximum.
      4. 寫一個猜數字的game，先隨機產生四個數字，接著可以輸入4個猜測的數字，數字是有順序性的，然後程式必需告訴你，
         猜對1個數字的位置回報1A，猜對1個數字回報1B。
-     5. A designer is trying to create a new pattern of five stripes using three colors. These colors and their         codes are mentioned in the table below. The designer has to keep in mind that no two adjacent stripes           are of the same color. For example, RRGBR is an invalid pattern, but RGBRB is valid.
+     5. A designer is trying to create a new pattern of five stripes using three colors. These colors and   
+        their codes are mentioned in the table below. The designer has to keep in mind that no two adjacent 
+        stripes are of the same color. For example, RRGBR is an invalid pattern, but RGBRB is valid.
 
-        Write a program that accepts a sequence of five colors as input from the designer to form the pattern.         At each selection the designer makes, the program should check if the input is from among the available         set of colors. Also, the program should check that adjacent colors are not the same. At the end, the           program should display the final stripe pattern created.
+        Write a program that accepts a sequence of five colors as input from the designer to form the 
+        pattern. At each selection the designer makes, the program should check if the input is from among 
+        the available set of colors. Also, the program should check that adjacent colors are not the 
+        same. At the end, the program should display the final stripe pattern created.
         
      作業三 :
      1. Write a sorting algorithm by the values in descending order.
